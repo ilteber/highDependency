@@ -7,10 +7,11 @@ public class Society {
 	private ArrayList<Family> familyList;
 	private String name;
 	private int size;
-	private Family current_fam = new Family(new Person(1,"a","b",true),new Person(1,"c","d",true),"abcd Family");
+	private Family richfam;
 	public Society(ArrayList<Family> familyList, String name) {
 		this.familyList = familyList;
 		this.name = name;
+		
 		familyList = new ArrayList<Family>();
 		size = 0;
 	}
@@ -36,6 +37,6 @@ public class Society {
 	
 	@Override
 	public String toString() {
-		return "Society [familyList=" + familyList + ", name=" + name + ", size=" + size + "]";
+		return "Society [familyList=" + familyList + ", name=" + name + ", size=" + size + "Richest = "+ richfam.getSurname()+"]";
 	}
 }
