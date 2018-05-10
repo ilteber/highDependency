@@ -7,7 +7,7 @@ public class Society {
 	private ArrayList<Family> familyList;
 	private String name;
 	private int size;
-	
+	private current_fam = new Family(new Person(1,"a","b",true),new Person(1,"c","d",true),"abcd Family") 
 	public Society(ArrayList<Family> familyList, String name) {
 		this.familyList = familyList;
 		this.name = name;
